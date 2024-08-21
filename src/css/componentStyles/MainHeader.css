@@ -1,0 +1,93 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    transition: background-color .3s ease;
+    z-index: 10;
+}
+.header.header-scrolled { /* This takes over when you scroll down the page */
+    background-color: var(--black);
+    box-shadow: 0 3px 2px -2px rgba(71, 71, 71, 0.281);
+}
+
+.header-content-wrapper {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    height: var(--headerHeight);
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 15% 1fr 15%;
+}
+.header-content-wrapper ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: var(--headerHeight);
+}
+.header-content-wrapper ul a {
+    display: flex;
+    flex-direction: column;
+    height: var(--headerHeight);
+    justify-content: center;
+    color: var(--white);
+}
+.header-content-wrapper ul a p {
+    padding: 8px 12px;
+    border-radius: 12px;
+    margin-top: auto;
+}
+.header-content-wrapper ul a:hover > p, .header-content-wrapper ul a:focus > p {
+    background-color: rgba(102, 102, 102, 0.425);
+    color: white;
+}
+.header-underline {
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--gray);
+    transition: all 0.4s ease 0s;
+    margin-top: auto;
+}
+.header-underline.active {
+    background-color: var(--rose);
+}
+.header-content-wrapper ul a:hover > .header-underline, .header-content-wrapper ul a:focus > .header-underline {
+    background-color: var(--ACTIVE_rose);
+}
+
+
+.nav-logo {
+    display: block;
+    width: 100%;
+    background-image: url(../../images/EnFLogo.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    transition: all 0.4s ease 0s;
+}
+.nav-logo:hover, .nav-logo:focus {
+    background-image: url(../../images/EnFLogoActive.svg);
+}
+
+.header-social-links {
+    height: var(--headerHeight);
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.social-icons {
+    display: block;
+    height: 44px;
+    width: 44px;
+    transition: all 0.4s ease 0s;
+}
+.steam-icon {
+    background-image: url(../../images/Icons/steam_gray.svg)
+}
+.steam-icon:hover, .steam-icon:focus {
+    background-image: url(../../images/Icons/steam_rose_active.svg);
+}

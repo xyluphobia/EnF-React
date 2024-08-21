@@ -1,0 +1,197 @@
+.home-banner {
+    width: 100%;
+    height: 85vh;
+    min-height: 188px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+    z-index: -10;
+}
+.home-banner-content {
+    text-align: center;
+}
+.home-banner-content a {
+    font-size: 6.4rem;
+    color: var(--white);
+    background-color: transparent;
+    padding: 0 10px 10px;
+}
+.home-banner-content a:hover, .home-banner-content a:focus {
+    color: white;
+    background-color: var(--TRANS_black);
+}
+.home-banner-content h1 {
+    font-size: 3.8rem;
+}
+
+.active-project {
+    margin-top: 20vh;
+}
+.active-project h2 {
+    margin-bottom: 100px;
+
+    font-size: 3.6rem;
+    color: var(--ACTIVE_rose);
+    text-decoration: underline;
+    text-decoration-color: var(--rose);
+}
+.active-project-non-header {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.active-project-image img {
+    max-width: 960px;
+    max-height: 540px;
+    background-color: transparent;
+    border-radius: 9px;
+    object-fit: contain;
+}
+.active-project-blog-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.active-project-card {
+    background: linear-gradient(144deg, rgba(27,26,25,0.24) 0%, rgba(27,26,25,0.24) 35%, rgba(66, 0, 0, 0.1) 100%);
+    min-height: 120px;
+    max-height: 120px;
+    border-radius: 9px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card-text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px;
+}
+.card-text-content h2 {
+    font-size: 2.8rem;
+    color: var(--white);
+    line-height: 1;
+    margin: 0;
+}
+.card-text-content div {
+    display: flex;
+    flex-direction: row;
+}
+.card-text-content div.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    margin-top: 2px;
+    background-color: var(--gray);
+}
+.card-text-content div.update-icon {
+    background-color: transparent;
+    background-image: url(../../images/Icons/update_gray.svg);
+}
+.card-text-content div.info-icon {
+    background-color: transparent;
+    background-image: url(../../images/Icons/info_gray.svg);
+}
+.card-text-content div.plan-icon {
+    background-color: transparent;
+    background-image: url(../../images/Icons/plan_gray.svg);
+}
+.card-text-content div h3 {
+    font-size: 2rem;
+    color: var(--gray);
+}
+.card-image-content {
+    width: 30%;
+    border-radius: 9px;
+    object-fit: cover;
+    background-color: blue;
+}
+
+
+.all-projects {
+    margin-top: 25vh;
+}
+.all-projects h2 {
+    margin-bottom: 100px;
+
+    font-size: 3.6rem;
+    color: var(--ACTIVE_rose);
+    text-decoration: underline;
+    text-decoration-color: var(--rose);
+}
+.all-projects-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.all-projects-cards > * {
+    background-color: green;
+    min-height: 400px;
+    max-height: 120px;
+    min-width: 360px;
+    border-radius: 9px;
+}
+
+
+.mailing-list {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    font-family: jgs, Arial, Helvetica, sans-serif;
+    font-size: 2.1rem;
+    color: var(--white);
+}
+.mailing-list form {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 40%;
+    padding: 2rem;
+    margin: 0 auto;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mailing-list form label {
+    width: 60%;
+    font-size: 2.2rem;
+    text-align: center;
+    color: var(--ACTIVE_rose);
+}
+.mailing-list form input {
+    border: 1px solid var(--rose);
+    border-radius: 0.4rem;
+    line-height: 2rem;
+    padding: 1rem;
+}
+.mailing-list form input[type=email] {
+    width: 66%;
+    margin-top: 2rem;
+}
+.mailing-list form input[type=email]::placeholder {
+    color: var(--gray);
+    opacity: 1;
+}
+.mailing-list form input[type=submit] {
+    cursor: pointer;
+    width: 40%;
+    margin-top: 2rem;
+    text-align: center;
+    background-color: transparent;
+    transition: all 0.3s ease 0s;
+}
+.mailing-list form input[type=submit]:hover, .mailing-list form input[type=submit]:focus {
+    background-color: var(--ACTIVE_rose);
+}
