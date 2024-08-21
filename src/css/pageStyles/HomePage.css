@@ -64,7 +64,6 @@
 }
 .active-project-card {
     background: linear-gradient(144deg, rgba(27,26,25,0.24) 0%, rgba(27,26,25,0.24) 35%, rgba(66, 0, 0, 0.1) 100%);
-    min-height: 120px;
     max-height: 120px;
     border-radius: 9px;
     

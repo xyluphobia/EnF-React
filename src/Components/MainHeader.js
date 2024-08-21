@@ -13,7 +13,6 @@ function MainHeader() {
         setHeader(false);
     }
     });
-    
 
     return (
       <header className={header ? 'header header-scrolled' : 'header'}>
@@ -22,7 +21,7 @@ function MainHeader() {
                   <ul>
                       <CustomListElement to="/projects" linkName="Projects" />
                       <CustomListElement to="/about" linkName="Who Am I" />
-                      <CustomListElement to="/careers" linkName="Work With Us" />
+                      <CustomListElement to="/contact" linkName="Contact" />
                       <CustomListElement to="/articles" linkName="News" />
                   </ul>
                   <section className="header-social-links">

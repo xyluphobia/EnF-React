@@ -3,6 +3,8 @@ import '../css/pageStyles/About.css';
 function About() {
   return (
     <>
+    <div className="fake-header-box"></div>
+    
     <section className="about-banner">
       <section className="about-banner-content">
         <div>

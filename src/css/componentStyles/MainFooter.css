@@ -22,6 +22,9 @@ footer h3 {
     grid-template-rows: 1fr 20%;
     row-gap: 1rem;
 }
+.footer-wrapper .active a {
+    color: var(--ACTIVE_rose);
+}
 .footer-link-holder {
     grid-column: 1;
     grid-row: 1;

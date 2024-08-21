@@ -17,7 +17,7 @@ function HomePage() {
         </section>
         <main>
         <section className="active-project">
-                <h2>What Are We Working On?</h2>
+                <h2>What Am I Working On?</h2>
                 <section className="active-project-non-header">
                     <a className="active-project-image" href='https://store.steampowered.com/' target='_blank' rel="noreferrer"><img alt='Banner of the teams active project.' src={require("../images/SoulSwapBanner.png")}/></a>
                     <section className="active-project-blog-cards">
@@ -74,7 +74,7 @@ function HomePage() {
             </section>
 
             <section className="all-projects">
-                <h2>Our Projects</h2>
+                <h2>My Projects</h2>
                 <section className="all-projects-cards">
                     <div className="1"></div>
                     <div className="2"></div>
@@ -85,7 +85,7 @@ function HomePage() {
 
             <section className="mailing-list">
                 <form>
-                    <label htmlFor="mailing-list-email">Join Our Mailing List For Updates</label>
+                    <label htmlFor="mailing-list-email">Join The Mailing List For Updates</label>
                     <input type="email" placeholder="Email Address"
                     id="mailing-list-email" 
                     name="mailing-list-email" required />
