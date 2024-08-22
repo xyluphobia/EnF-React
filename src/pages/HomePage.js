@@ -1,5 +1,6 @@
 import '../css/pageStyles/HomePage.css'
 import bannerVideo from '../video/BannerSoulSwapVingette.mp4'
+import { Link } from 'react-router-dom';
 
 function HomePage() {
     return (
@@ -21,7 +22,7 @@ function HomePage() {
                 <section className="active-project-non-header">
                     <a className="active-project-image" href='https://store.steampowered.com/' target='_blank' rel="noreferrer"><img alt='Banner of the teams active project.' src={require("../images/SoulSwapBanner.png")}/></a>
                     <section className="active-project-blog-cards">
-                        <a href='https://store.steampowered.com/' target='_blank' rel="noreferrer">
+                        <Link to="/moba-character">
                             <article className="active-project-card">
                                 <div className="card-text-content">
                                     <h2>New Character // MOBA</h2>
@@ -32,8 +33,8 @@ function HomePage() {
                                 </div>
                                 <img className="card-image-content" alt='New character & its abilities.' src={require("../images/Updates/MOBACharUpdate/simpleBannerWithAbilities.png")}/>
                             </article>
-                        </a>
-                        <a>
+                        </Link>
+                        <Link to="/rotator-boss">
                             <article className="active-project-card">
                                 <div className="card-text-content">
                                     <h2>Rotator Boss</h2>
@@ -44,8 +45,8 @@ function HomePage() {
                                 </div>
                                 <img className="card-image-content" alt='New Rotator boss.' src={require("../images/Updates/RotatorUpdate/bannerSimple.png")}/>
                             </article>
-                        </a>
-                        <a>
+                        </Link>
+                        <Link to="/soulswap">
                             <article className="active-project-card">
                                 <div className="card-text-content">
                                     <h2>Soul Swap // What Is It?</h2>
@@ -56,8 +57,8 @@ function HomePage() {
                                 </div>
                                 <img className="card-image-content" alt='Soul Swap Banner.' src={require("../images/SoulSwapBanner.png")}/>
                             </article>
-                        </a>
-                        <a>
+                        </Link>
+                        <Link to="/potions-collectibles">
                             <article className="active-project-card">
                                 <div className="card-text-content">
                                     <h2>Potions & Collectibles</h2>
@@ -68,7 +69,7 @@ function HomePage() {
                                 </div>
                                 <img className="card-image-content" alt='Potions and collectibles which will be updated.' src={require("../images/Updates/PotionsCollectiblesUpdate/bannerSimple.png")}/>
                             </article>
-                        </a>
+                        </Link>
                     </section>
                 </section>
             </section>

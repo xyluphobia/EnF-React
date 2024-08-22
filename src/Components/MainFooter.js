@@ -26,8 +26,8 @@ function MainFooter() {
             <div className="footer-contact-holder">
                 <h3>Contact</h3>
                 <ul>
-                    <li><a href="mailto:email@email.com">questions@email.com</a></li>
-                    <li><a href="mailto:email@email.com">business@email.com</a></li>
+                    <li><a href="mailto:questions@errornotfound.dev">questions@errornotfound.dev</a></li>
+                    <li><a href="mailto:business@errornotfound.dev">business@errornotfound.dev</a></li>
                 </ul>
             </div>
             <p className="copyright-p">&copy;2024 ErrorNotFound. All Rights Reserved.</p>

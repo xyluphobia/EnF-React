@@ -44,6 +44,9 @@ footer h3 {
     grid-template-rows: 20% 1fr;
     height: fit-content;
 }
+.footer-contact-holder ul li a {
+    font-size: 2.2rem;
+}
 .footer-wrapper .copyright-p {
     grid-column: 1;
     grid-row: 2;
