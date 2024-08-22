@@ -1,29 +1,39 @@
 import '../css/pageStyles/Articles.css';
+import { Link } from 'react-router-dom';
 
 function Articles() {
   return (
     <>
-    <section className="articles-banner"></section>
-    <main className="articles-main">
-      <section className="article-header-holder">
-        <div className="spacer"></div>
-        <div className="header-info-holder">
-          <h1 className="article-title">Soul Swap</h1>
-          <p className="article-type">Update</p>
-          <p className="article-date-posted">08/21/2024</p>
-        </div>
-        <div className="spacer"></div>
-      </section>
-      <section className="article-content-holder">
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae sapien magna. Sed nisi ex, suscipit ac velit at, porttitor pretium elit. Nam feugiat vitae diam id lacinia. Quisque bibendum augue a dui tincidunt hendrerit. Curabitur id magna erat. Etiam nec augue at ante rhoncus ultrices vel sed enim. Mauris non aliquet magna. Nunc accumsan diam est, pulvinar laoreet ex condimentum quis. Nunc vitae aliquet quam. Sed cursus odio in lobortis ornare. Etiam faucibus justo sit amet eleifend feugiat. Vestibulum tempus bibendum augue at consectetur. Ut fringilla dui felis, eget commodo elit pellentesque non. Ut egestas mauris ex, vitae dignissim neque malesuada sit amet. In arcu massa, eleifend id erat non, commodo hendrerit nisl. Donec varius nibh eget tortor condimentum mollis. 
-        </p>
-      </section>
+    <main className='articles-main'>
+      <h1>Articles</h1>
+      <h2>Recent</h2>
+      <ArticleCard to="/moba-character" title="New Character // MOBA" type="update" classes="icon update-icon" date="20/20/2020" />
+      <ArticleCard to="/rotator-boss" title="Rotator Boss" type="update" classes="icon update-icon" date="20/20/2020" />
+      <ArticleCard to="/soulswap" title="Soul Swap // What Is It?" classes="icon info-icon" type="info" date="20/20/2020" />
+      <ArticleCard to="/potions-collectibles" title="Potions & Collectibles" classes="icon plan-icon" type="plan" date="20/20/2020" />
+
+      <div className='vr articles-vr'></div>
+      <div className='vr recent-vr'></div>
     </main>
     </>
   );
 }
 
-
+function ArticleCard({to, title, type, classes, date}) {
+  return (
+    <Link to={to}>
+      <article className="article-card">
+        <div className="article-card-text-content">
+          <h2>{title}</h2>
+          <div style={{marginTop: "3px"}}>
+            <div className={classes}></div>
+            <h3>{type}</h3>
+          </div>
+        </div>
+        <p>{date}</p>
+      </article>
+    </Link>
+  )
+}
 
 export default Articles;

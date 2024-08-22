@@ -93,6 +93,11 @@ main {
     background: var(--rose);
     margin: 10px 0;
 }
+.vr {
+    height: 100%;
+    max-width: 1px;
+    background: var(--rose);
+}
 .fake-header-box {
     width: 100%;
     height: var(--headerHeight);

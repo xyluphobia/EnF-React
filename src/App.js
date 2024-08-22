@@ -9,6 +9,12 @@ import About from './pages/About.js';
 import Contact from './pages/Contact.js';
 import Articles from './pages/Articles.js';
 
+import ArticleTemplate from './pages/ArticleTemplate.js';
+import ArticleMOBA from './pages/Articles/mobaCharacter.js';
+import ArticleRotator from './pages/Articles/rotatorBoss.js';
+import ArticleSoulSwap from './pages/Articles/soulSwap.js';
+import ArticlePotionsCollectibles from './pages/Articles/potionsCollectibles.js';
+
 function App() {
   return (
     <>
@@ -20,6 +26,13 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/articles" element={<Articles />} />
+
+
+        <Route path="/article-template" element={<ArticleTemplate />} />
+        <Route path="/moba-character" element={<ArticleMOBA />} />
+        <Route path="/rotator-boss" element={<ArticleRotator />} />
+        <Route path="/soulswap" element={<ArticleSoulSwap />} />
+        <Route path="/potions-collectibles" element={<ArticlePotionsCollectibles />} />
       </Routes>
       
       <MainFooter />
